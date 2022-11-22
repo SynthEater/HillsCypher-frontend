@@ -1,20 +1,38 @@
 <html>
 
 <head>
-
+    <script src="mde_crypt-master1.zip"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.4.0/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/matiasvlevi/dann@v2.4.1e/build/dann.min.js"></script>
 </head>
 
 <body>
     <form method="post" action="app.js" name="formTest">
-        <label for="message">
-            Message to encrypt
-        </label>
-        <input type="text" name="MessageToEncryptINPUTBOX" id="message" placeholder="Enter data to encrypt" />
+        <div>
+            <label for="message">
+            Message to encrypt:
+            </label>
+
+            <input type="text" name="MessageToEncryptINPUTBOX" id="message" placeholder="Enter data to encrypt" required/>
+            <br>
+
+            <button style="background-color: slateblue; border-radius: 5px;">
+            Encrypt
+            </button>
+        </div>
+
+        <br><br>
+
+        <div>
+            <label>
+            Encrypted Message:
+            </label>
+        </div>
     </form>
 
-    <button style="background-color: slateblue; border-radius: 5px;">
-        Encrypt
-    </button>
+
+
+    <output></output>
 </body>
 
 </html>
