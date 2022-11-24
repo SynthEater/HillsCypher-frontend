@@ -9,32 +9,65 @@
 </head>
 
 <body>
+    <!--ENCRYPTION-->
     <div>
+        <h1>ENCRYPTION</h1>
+
         <label for="message">
             Message to encrypt:
-            </label>
+        </label>
 
         <textarea class="input" type="text" cols="40" rows="5" name="MessageToEncrypt" id="message">
             Sample data (test encryption)
         </textarea>
-        <br>
 
-        <button onclick='main()' style="background-color: slateblue; border-radius: 5px;">
+        <br><br>
+
+        <button onclick='encrypt()' style="background-color: slateblue; border-radius: 5px;">
             Encrypt
-            </button>
-    </div>
+        </button>
 
-    <br><br>
 
-    <div>
+        <br><br>
+
+        <!--Maybe propose to the user to copy with ctrl a to get all data-->
         <label>
             Encrypted Message:
-            </label>
-        <textarea class="output" type="text" name="EncryptedMessage" id="message" cols="40" rows="5">
+        </label>
+        <textarea class="output" type="text" name="EncryptedMessage" id="message" cols="40" rows="5"></textarea>
 
-        </textarea>
+        <br><br><br><br>
+
+        <!--KEY-->
+
+        <label for="keyTextbox">This is your key:</label>
+
+        <textarea class="key" type="text" name="key" id="keyTextbox" cols="50" rows="2"></textarea>
     </div>
 
+    <!--DECRYPTION-->
+    <div>
+        <h1>DECRYPTION</h1>
+
+        <label for="">Enter encrypted data here:</label>
+        <textarea class="dataDecrypt" name="dataDecrypt" id="dataDecryptText" cols="40" rows="5"></textarea>
+
+        <br><br><br>
+
+        <label for="keyDecryptText">Enter your key here:</label>
+        <textarea class="keyDecrypt" name="keyDecrypt" id="keyDecryptText" cols="50" rows="2"></textarea>
+
+        <br><br>
+
+        <button onclick='decrypt()' style="background-color: slateblue; border-radius: 5px;">
+            Decrypt
+        </button>
+
+        <br>
+
+        <label for="decryptedmsg">Decrypted message:</label>
+        <textarea class="decryptedmsg" name="decryptedmsg" id="decryptedmsg" cols="40" rows="5"></textarea>
+    </div>
 </body>
 
 </html>
