@@ -3,6 +3,7 @@ function encrypt() {
 
     //generate key
     let key = MDE.Keygen.random(8);
+
     let dom_keyOutput = document.querySelector('.key');
     dom_keyOutput.textContent = key;
 
@@ -17,13 +18,9 @@ function encrypt() {
         dataToChar.push(String.fromCharCode(enc.data[i] % 127));
     }
     dom_output.textContent = dataToChar.join('');
+}
 
-
-    //DECRYPTION
-
-    /**
-     * function decrypt(){
-     * 
-     * }
-     */
+function decrypt() {
+    let dom_keyInput = document.querySelector('.dataDecrypt');
+    let dom_decryptOutput = document.querySelector('.decryptedmsg');
 }
