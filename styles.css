@@ -1,4 +1,49 @@
-button {
-    width: 100px;
-    min-width: 100px;
+body {
+    background-image: url("/home/x_x/Pictures/Hill's_message_protector.png");
+    background-size: auto;
+}
+
+textarea {
+    width: 82%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    margin-top:0px;
+}
+
+/*all the text that precedes textboxes*/
+.instruction {
+    text-align: center;
+}
+
+.button {
+    width: 110px;
+    min-width: 110px;
+    background-color: slateblue;
+    border-radius: 5px;
+}
+
+/* .cont.. class is in divs wrapping both buttons */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface {
+    width: 40%;
+    background-color: #708074;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
